@@ -15,6 +15,8 @@ public class TagContentExtractorRegEx {
              //Write your code here
    int count=0;
    Pattern r = Pattern.compile("<(.+?)>([^<>]+)</\\1>");
+   // OR
+   // Pattern r = Pattern.compile("<([^>]+)>([^<>]+)</\\1>");
    Matcher m = r.matcher(line);
    while(m.find()) {
      if (m.group(2).length() !=0) {
