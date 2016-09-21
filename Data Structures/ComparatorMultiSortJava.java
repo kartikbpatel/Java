@@ -40,7 +40,7 @@ class Checker implements Comparator<Student>{
 }
 
 //Complete the code
-public class JavaComparatorMultiSort
+public class ComparatorMultiSortJava
 {
  public static void main(String[] args){
   Scanner in = new Scanner(System.in);

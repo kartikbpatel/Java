@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-class JavaMap{
+class MapJava {
     public static void main(String []argh)
     {
         HashMap<String, Integer> hash = new HashMap<>();

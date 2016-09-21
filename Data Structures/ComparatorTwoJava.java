@@ -37,7 +37,7 @@ class Player{
     }
 }
 
-class JavaComparatorTwo {
+class ComparatorTwoJava {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

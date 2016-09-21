@@ -24,7 +24,7 @@ class Player{
 	}
 }
 
-class JavaComparator {
+class ComparatorJava {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
