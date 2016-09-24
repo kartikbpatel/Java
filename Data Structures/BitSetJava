@@ -1,0 +1,59 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class BitSetJava {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scan = new Scanner(System.in);
+        int N = scan.nextInt();
+        int M = scan.nextInt();
+        
+        BitSet bitset1 = new BitSet(N);
+        BitSet bitset2 = new BitSet(N);
+        
+        
+        for(int i=0;i<M;i++){
+            String bOps = scan.next(); 
+            int b1 = scan.nextInt();
+            int b2 = scan.nextInt();
+            
+            switch (bOps) {
+              case "AND":
+                  if(b1==1)
+                     bitset1.and(bitset2);
+                 else
+                     bitset2.and(bitset1);
+                 break;
+             case "OR":
+                 if(b1==1)
+                     bitset1.or(bitset2);
+                 else
+                     bitset2.or(bitset1);
+                 break;
+             case "XOR":
+                 if(b1==1)
+                     bitset1.xor(bitset2);
+                 else
+                     bitset2.xor(bitset1);
+                 break;
+             case "FLIP":
+                 if(b1==1)
+                    bitset1.flip(b2);
+                else
+                    bitset2.flip(b2);
+                break;
+            case "SET":
+                if(b1==1)
+                    bitset1.set(b2);
+                else
+                    bitset2.set(b2);
+                break;
+        }
+        System.out.println(bitset1.cardinality() +" "+ bitset2.cardinality());     
+    }
+}
+}
